@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+	<script charset="utf-8">
+		document.title = "Exercício 06";
+		
+		function calcula(x, y){
+			
+			if (x > y){
+				var resp2 = x;
+				var resp3 = Math.sqrt(y);
+				document.getElementById("maior").value = resp2;
+				document.getElementById("raiz").value = resp3;
+			}else{
+				var resp2 = y;
+				var resp3 = Math.sqrt(x);			
+				document.getElementById("maior").value = resp2;
+				document.getElementById("raiz").value = resp3;
+			}
+			
+			var resp1 = Math.pow(x, y)			
+			
+			return resp1;
+		}
+	</script>
+	
+	<style>
+		body{
+			background-color: #CCDDDD;			
+		}
+		h1{
+			font-family: verdana, arial;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: right;
+			text-shadow: 2px 2px white;
+		}
+		div{
+			background-color: #DDEEEE;
+			font-family: arial;
+			color: darkblue;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			padding: 10px;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<script>
+		document.write("<h1>Exercício 06 - Objeto Meth</h1>");
+		document.write("<h1>Adriana e Igor</h1>");
+	</script>
+	
+	<form>
+		<div>
+			Digite um numero qualquer:
+			<input type="number" id="num" size=2 maxlength=2>
+			e seu expoente:
+			<input type="number" id="exp" size=2 maxlength=2>
+			<input type="button" value="CALCULAR A POTENCIA" onClick="alert('O numero ' + num.value + ' elevado a ' + exp.value + ' é: ' + calcula(num.value, exp.value))">
+			
+			<hr size=1 color="darkblue">
+			
+			O maior numero digitado:
+			<input type="number" id="maior" size=2 readonly disabled><br>
+			A raiz quadrada do menor número é: 
+			<input type="number" id="raiz" size=10 readonly disabled>
+			
+		</div>
+	</form>
+	
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
