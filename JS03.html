@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<META charset="UTF-8">
+<HEAD>
+	<script>
+	document.title="Exercício 03"
+	</script>
+	<style>
+	body{
+		background: #CCDDCC;
+	}
+	h1{
+		font-family: Verdana, Arial;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		text-shadow: 2px 2px white;
+	}
+	h2{
+		font-family: Arial;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+	}
+	p{
+		font-family: Century Gothic;
+		color: #335533;
+		font-size: 26px;
+		text-align: center;
+		padding: 20px 20px;
+	}
+	</style>
+</HEAD>
+<BODY>
+	<h1>Exercício 03 - Condicionais</h1>
+	<h1>Esta linha foi escrita em HTML</h1>
+	<h1>Adriana e Igor</h1>
+	<hr>
+	<h2>Verificação da Resolução do Monitor</h2>
+	<hr>
+	<script language = "JavaScript">
+	var mensagem="";
+	var comp=window.screen.width;
+	var larg=window.screen.height;
+	var sexo_aluno1="M";
+	document.write("<p>A resolução do seu monitor é de " +comp+ "X" +larg);
+	
+	if (comp < 480){
+		mensagem += "Tela de Smartphone";
+	} else if (480 < comp && comp <= 600){
+		mensagem += "Tela de Tablet";
+	} else if (600 < comp && comp <= 780){
+		mensagem += "Tela pequena para Desktop";
+	} else if (780 < comp && comp <= 1280){
+		mensagem += "Tela boa para Desktop";
+	} else {
+		mensagem += "Uau! Tela Gigante";
+	}
+	window.alert(mensagem);
+	</script>
+	<script language = "JavaScript">
+	switch(sexo_aluno1){
+		case "F":
+		document.fgColor= "#CD5C5C";
+		break;
+		case "M":
+		document.fgColor= "#87CEFA";
+		break;
+		default:
+		document.fgColor= "#9370DB";
+		break;
+	}
+	</script>
+	<NOSCRIPT> 
+	Por gentileza, habilite o JavaScript!
+	</NOSCRIPT>
+</BODY>

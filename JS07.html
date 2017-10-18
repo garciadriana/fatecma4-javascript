@@ -1,0 +1,95 @@
+﻿<!doctype html>
+ <meta charset="utf-8">
+ 
+<head>
+	<script>
+		document.title="Exercicio 07";
+	</script>
+	<style>
+		body{ 
+		background: #553333;
+		color: #CCCCCC;
+		}
+		
+		h1{
+			font-family: verdana, arial;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			text-shadow: 2px 2px white;
+		}
+		
+		h2{
+			font-family: arial;
+			color: orange;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
+		
+		pre{
+			font-family: courier;
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<script>
+
+function altera(){
+		if (window.confirm("Quer alterar para tons de amarelo?"))
+		{
+			document.body.style.backgroundColor ="yellow";
+			document.body.style.color ="brown";
+			window.alert("A nova cor do fundo é: " + cor5 + "\n A nova cor de fonte da página é: " + cor6);
+		}
+		else
+		{
+			document.title=" Novo Exercicio 7";
+		}
+	}
+</script>
+	
+<body onload="altera()"> 
+ 
+
+	<script>
+		document.write("<h1>Exercício 07 - CORES</h1>");
+		document.write("<h2>Adriana Garcia e Igor Martins</h2>");
+		
+	</script>
+	<hr>
+	<script>
+	var cor1 = document.alinkColor="#0000ff";
+	var cor2 = document.vlinkColor="#800080";
+	var cor3 = document.bgColor="#553333";
+	var cor4 = document.fgColor="#CCCCCC";
+	var cor5 = "#ffff00";
+	var cor6 = "#a52a2a";
+	document.write("<pre>A cor dos links da página: \t\t\t" + cor1);
+	document.write("<pre>A cor dos links visitados da página: \t\t" + cor2);
+	document.write("<pre>A cor do fundo da página: \t\t\t" + cor3);
+	document.write("<pre>A cor da fonte da página: \t\t\t" + cor4 +"</pre>");
+	</script>
+	<hr>
+	<h2><input type="RADIO" id="fundo" value="Tons de verde" onClick="fundoverde()">Tons de verde<br>
+	<input type="RADIO" id="fundo" value="Tons de azul" onClick="fundoazul()">Tons de azul</h2>
+	</script>
+	
+	<script>
+		function fundoverde()
+		{
+			document.body.style.backgroundColor ="darkgreen";
+			document.body.style.color ="lightgreen";
+			
+		}
+		
+		function fundoazul()
+		{
+			document.body.style.backgroundColor ="darkblue";
+			document.body.style.color ="lightblue";
+			
+		}
+	</script>
+</body>
+</html>
