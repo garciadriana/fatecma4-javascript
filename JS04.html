@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script>
+	       document.title="Exercício 04"
+	</script>
+	<script>
+	       function resp1(){
+			console.log("ola");
+            var initNumber1=document.getElementById("num").value;
+            document.getElementById("idresp1").value = initNumber1++;
+	       }
+	       function resp2(){
+	           var initNumber2=document.getElementById("num").value;
+	           document.getElementById("idresp2").value = ++initNumber2;
+	       }
+	       function resp3(){
+	           var initNumber3=document.getElementById("num").value;
+	           document.getElementById("idresp3").value = initNumber3--;
+			}
+	       function resp4(){
+	           var initNumber4=document.getElementById("num").value;
+	           document.getElementById("idresp4").value = --initNumber4;
+	       }
+	</script>
+	<style>
+	       body{
+	           background: #CCAACC;
+	       }
+	       h1{
+	           font-family: verdana, arial;
+	           font-size: 20px;
+	           font-weight: bold;
+	           text-shadow: 2px 2px white;
+	       }
+	       h2{
+	           font-family: arial;
+	           color: #000080;
+	           font-size: 23px;
+	           font-weight: bold;
+	       }
+	       .centro{
+	           text-align: center;
+	       }
+	</style>
+</head>
+<body>
+	<h2>Exercício 04 - Operadores Incrementais e Decrementais</h2>
+	<h2 class="centro">Adriana Garcia e Igor Martins</h2>
+	<hr>
+	<form>
+		<h1 class="centro">Digite um número inteiro x: <input id="num" onBlur="resp1();resp2();resp3();resp4();" type="number"></h1>
+		<h2>Incrementais</h2>
+		<h1>O resultado de ++x é: <input id="idresp1" readonly size="3" type="number" value=""></h1>
+		<h1>O resultado de x++ é: <input id="idresp2" readonly size="3" type="number" value=""></h1>
+		<h2>Decrementais</h2>
+		<h1>O resultado de --x é: <input id="idresp3" readonly size="3" type="number" value=""></h1>
+		<h1>O resultado de x-- é: <input id="idresp4" readonly size="3" type="number" value=""></h1>
+		<hr>
+		<input name="limpar" type="reset" value="Limpar" onClick="document.getElementById('num').focus()">
+	</form>
+</body>
+</html>

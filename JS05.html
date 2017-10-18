@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script>
+	       document.title="Exercício 05"
+	</script>
+	<script>
+	       function par(ini, fim){
+		   	console.log(ini,fim);
+			var pares='';
+			   ini = parseInt(ini);
+			   fim = parseInt(fim)
+	           for(var i=ini;i<fim;i++){
+	               if(i%2==0){
+	                   pares+=i+" ";
+	               }
+	           }
+			   alert(pares);
+	       }
+	       function impar(ini, fim){
+		   console.log(ini,fim);
+		   var impares='';
+		   ini = parseInt(ini);
+           fim = parseInt(fim)
+	       for(var i=ini;i<fim;i++){
+	           if(i%2!=0){
+	               impares+=i+" ";
+				}
+			}
+			alert(impares);
+		}
+	</script>
+	<style>
+	       h1{
+	           font-family: century gothic;
+	           font-size: 25px;
+	           font-weight: bold;
+	       }
+	</style>
+</head>
+<body>
+	<script language="javascript">
+	   document.bgColor = "#225522";
+	   document.fgColor = "#AAFFAA";
+	</script>
+	<h1>Exercício 05 - Números Pares e Ímpares</h1>
+	<h1 style="color:#FFA500">Adriana Garcia e Igor Martins</h1>
+	<hr>
+	<center>
+		<form>
+			<h1 style="color:##FFFFFF">Digite um número inicial: <input name="ini" type="number"></h1>
+			<h1 style="color:##FFFFFF">Digite um número final: <input name="fim" type="number"></h1>
+			<input onClick="par(this.form.ini.value,this.form.fim.value)" type="button" value="Pares">
+			<input onClick="impar(this.form.ini.value,this.form.fim.value)" type="button" value="Impares"> 
+			<input name="limpar" type="reset" value="Limpar">
+		</form>
+	</center>
+</body>
+</html>
